@@ -36,7 +36,10 @@ form.addEventListener("submit", (e) => {
 
     validateContactForm();
 });
-
+donationForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    validateDonationForm();
+});
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector(".error");
